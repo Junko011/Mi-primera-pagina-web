@@ -1,18 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Primera Página Web</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog de Videojuegos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Mi Primera Página Web</h1>
-  </header>
-  <main>
-    <p>Bienvenido/a a mi primera página web. ¡Espero que te guste!</p>
-  </main>
-  <script src="script.js"></script>
+    
+    <header>
+      
+        <h1>Mi Blog de Videojuegos</h1>
+        <img src="/Imagenes para la web/Junko.jpeg" style="max-width:50px;" alt="Logo de Mi Blog de Videojuegos" class="imagen">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#reseñas">Reseñas</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <section id="inicio">
+        <h2>Bienvenidos a Mi Blog de Videojuegos</h2>
+        <p>¡Hola, gamers y entusiastas de los videojuegos! Bienvenidos a mi blog personal dedicado a compartir mi pasión por los videojuegos y el mundo de la diversión digital. Aquí encontrarás reseñas, noticias, consejos y mucho más. ¡Acompáñame en esta emocionante aventura gamer!</p>
+    </section>
+
+    <section id="reseñas">
+        <h2>Reseñas de Videojuegos</h2>
+        <div class="reseña">
+            <h3>Nombre del Juego 1</h3>
+            <p>Descripción y opinión sobre el juego 1...</p>
+        </div>
+        <div class="reseña">
+            <h3>Nombre del Juego 2</h3>
+            <p>Descripción y opinión sobre el juego 2...</p>
+        </div>
+        <!-- Agrega más reseñas aquí -->
+    </section>
+
+    <section id="noticias">
+        <h2>Últimas Noticias</h2>
+        <ul>
+            <li>Noticia 1 sobre un nuevo lanzamiento</li>
+            <li>Noticia 2 sobre una actualización importante</li>
+            <li>Noticia 3 sobre un evento de gaming</li>
+            <!-- Agrega más noticias aquí -->
+        </ul>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Derechos de autor © 2023 - Mi Blog de Videojuegos</p>
+    </footer>
+    
+    <script src="scripts.js"></script>
 </body>
 </html>
